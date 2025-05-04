@@ -271,11 +271,17 @@ Output: [true,true,true,false,true]
 
 
 
-let i;
-for (i = 0; i < 3; i++) {
-  const log = () => {
-    console.log(i);
-  }
-  setTimeout(log, 100);
-}
+// let i;
+// for (i = 0; i < 3; i++) {
+//   const log = () => {
+//     console.log(i);
+//   }
+//   setTimeout(log, 100);
+// }
 
+
+const obj1 = { name: 'kapil' }
+const obj2 = { name: 'kapil' }
+
+console.log(obj1 == obj2)
+console.log(obj1 === obj2)

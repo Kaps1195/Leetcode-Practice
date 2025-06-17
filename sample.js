@@ -285,3 +285,18 @@ const obj2 = { name: 'kapil' }
 
 console.log(obj1 == obj2)
 console.log(obj1 === obj2)
+
+const obj = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+delete obj.age;
+console.log(obj); // { name: 'John', city: 'New York' }
+
+const set  = new Set([1, 2, 3, 4, 5]);
+set.add(6);
+set.delete(3);
+console.log(set.has(2)); // true
+console.log(set); // Set { 1, 2, 4, 5, 6 }

@@ -11,10 +11,10 @@ var merge = function(intervals) {
 
     for(let i = 0; i < intervals.length; i++) {
         const currentInterval = intervals[i];
-        const lastInterval = res[res.length - 1];
+        const lastIntervalinResultArr = res[res.length - 1];
 
-        if(currentInterval[0] <= lastInterval[1]) {
-            lastInterval[1] = Math.max(currentInterval[1], lastInterval[1]);
+        if(currentInterval[0] <= lastIntervalinResultArr[1]) {
+            lastIntervalinResultArr[1] = Math.max(currentInterval[1], lastIntervalinResultArr[1]);
         } else {
             res.push(currentInterval);
         }

@@ -1,13 +1,14 @@
+// hoisting
 // console.log(a,b)
 // var a=10;
 // let b=20;
 
-
-// Console.log(1)
+// settimeout immediately executes
+// console.log(1)
 // setTimeout(()=>{
-// Console.log(2)
+// console.log(2)
 // },0)
-// Console.log(3)
+// console.log(3)
 
 /*
 
@@ -25,12 +26,14 @@
 // }
 
 // function sum2(a) {
-//     function sum3(b) {
-//         return a + b;
+//     return function sum3(b) {
+//         return function sum4(c) {
+//             return a + b + c;
+//         }
 //     }
 // }
 
-// console.log(sum(1,2));
+// console.log(sum2(1)(2)(3));
 
 
 /*
